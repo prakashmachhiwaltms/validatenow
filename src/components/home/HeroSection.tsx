@@ -7,7 +7,7 @@ const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
     {/* Grid pattern */}
     <div className="absolute inset-0 bg-grid-pattern opacity-30" />
-    
+
     {/* Glow orbs */}
     <div className="absolute top-1/4 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
     <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-accent/10 blur-[100px]" />
@@ -33,7 +33,7 @@ const HeroSection = () => (
         >
           Real-Time Lead{" "}
           <span className="text-gradient-primary">Validation</span> &{" "}
-          <span className="text-gradient-accent">Fraud Prevention</span>
+          <span className="text-gradient-accent">Fraud Prevention.</span>
         </motion.h1>
 
         <motion.p
