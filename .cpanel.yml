@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vpsproviderindia/validatenow.net/
+    - /bin/npm install
+    - /bin/npm run build
+    - /bin/cp -R dist/* $DEPLOYPATH
