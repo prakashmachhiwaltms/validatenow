@@ -13,7 +13,11 @@ import Integrations from "./pages/Integrations.tsx";
 import About from "./pages/About.tsx";
 import Demo from "./pages/Demo.tsx";
 import Login from "./pages/Login.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import TermsOfService from "./pages/TermsOfService.tsx";
+import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +27,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/features" element={<Features />} />
@@ -34,6 +39,9 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
